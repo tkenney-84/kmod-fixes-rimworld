@@ -11,22 +11,19 @@
 		<li>1.1</li>
 	</supportedVersions>
 	<description>
-!!! UPDATED FOR 1.4 !!!
+!!! UPDATED FOR 1.4 & ALL EXPANSIONS !!!
 
 The reduced meal cost feature has been transitioned to a separate mod.
 You can find it here: https://steamcommunity.com/sharedfiles/filedetails/?id=2215743464
 
-PLANS:
-
-- Compatibility issues will be resolved eventually.
-- Support for all expansions is complete, there have just been difficulties getting it implemented. So it is not present for now, as I want the 1.4 release out.
-
 COMPATIBILITY:
 - Compatible with versions 1.1, 1.2, 1.3, and 1.4.
-- Incompatible with any mods that make any modifications to the base-game stats on the flammability adjustments list.
+- Compatible with all expansions released prior to 2022-10-23. (Royalty, Ideology, Biotech)
+- Mod conflicts may arise if mods alter the flammability of any items on the flammability list.
+- Mod conflicts may arise if mods alter the energy consumption of the standing or sun lamps.
+- Mod conflicts may arise if mods alter the construction cost and details of the Brewery, Fermenting Barrels, Watermill Generator, or the Passive Cooler.
 
 CHANGES:
-
 - Set standing lamps power consumption from 30 to 5.
 - Set sun lamps power consumption from 2900 to 500.
 - Brewery can now be made out of wood or metal. (Fireproofing)
