@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+<Operation Class="PatchOperationReplace">
+  <xpath>/Defs/ThingDef[defName="Campfire"]/statBases/Flammability/text()</xpath>
+  <value>
+    1.0
+  </value>
+</Operation>
+<Operation Class="PatchOperationReplace">
+  <xpath>/Defs/ThingDef[defName="Heater" or defName="Cooler" or defName="Vent"]/statBases/Flammability/text()</xpath>
+  <value>
+    0.0
+  </value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+  <xpath>/Defs/ThingDef[defName="PassiveCooler"]</xpath>
+  <value>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>50</costStuffCount>
+  </value>
+</Operation>
+<Operation Class="PatchOperationRemove">
+  <xpath>/Defs/ThingDef[defName="PassiveCooler"]/costList/WoodLog</xpath>
+</Operation>
+<Operation Class="PatchOperationRemove">
+  <xpath>/Defs/ThingDef[defName="PassiveCooler"]/constructEffect</xpath>
+</Operation>
+</Patch>

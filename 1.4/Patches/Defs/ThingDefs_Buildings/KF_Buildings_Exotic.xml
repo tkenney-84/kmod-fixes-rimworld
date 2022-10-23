@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+<Operation Class="PatchOperationReplace">
+  <xpath>/Defs/ThingDef[defName="Shuttle" or defName="ShuttleCrashed"]/statBases/Flammability/text()</xpath>
+  <value>
+    0.15
+  </value>
+</Operation>
+<Operation Class="PatchOperationFindMod">
+  <mods>
+    <li>Ideology</li>
+  </mods>
+  <match Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName="Spacedrone"]/statBases/Flammability/text()</xpath>
+  <value>
+    0.0
+  </value>
+  </match>
+</Operation>
+<Operation Class="PatchOperationFindMod">
+  <mods>
+    <li>Royalty</li>
+  </mods>
+  <match Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName="BroadshieldProjector"]/statBases/Flammability/text()</xpath>
+  <value>
+    0.0
+  </value>
+  </match>
+</Operation>
+</Patch>

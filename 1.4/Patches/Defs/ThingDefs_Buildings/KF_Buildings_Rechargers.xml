@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+<Operation Class="PatchOperationFindMod">
+  <mods>
+    <li>Biotech</li>
+  </mods>
+  <match Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[
+    defName="BasicRecharger" or
+    defName="StandardRecharger"
+    ]/statBases/Flammability/text()</xpath>
+  <value>
+    0.0
+  </value>
+  </match>
+</Operation>
+</Patch>

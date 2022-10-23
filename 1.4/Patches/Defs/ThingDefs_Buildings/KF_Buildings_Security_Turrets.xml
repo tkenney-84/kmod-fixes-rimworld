@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+<Operation Class="PatchOperationReplace">
+  <xpath>/Defs/ThingDef[@Name="AutocannonTurret" or defName="Turret_RocketswarmLauncher"]/statBases/Flammability/text()</xpath>
+  <value>
+    0.0
+  </value>
+</Operation>
+</Patch>

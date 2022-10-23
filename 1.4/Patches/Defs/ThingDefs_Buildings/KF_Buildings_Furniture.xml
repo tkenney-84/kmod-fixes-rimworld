@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+<Operation Class="PatchOperationReplace">
+  <xpath>/Defs/ThingDef[defName="TorchLamp"]/statBases/Flammability/text()</xpath>
+  <value>
+    1.0
+  </value>
+</Operation>
+<Operation Class="PatchOperationReplace">
+  <xpath>/Defs/ThingDef[@Name="LampBase"]/statBases/Flammability/text()</xpath>
+  <value>
+    0.0
+  </value>
+</Operation>
+<Operation Class="PatchOperationReplace">
+  <xpath>/Defs/ThingDef[@Name="StandingLampBase"]/comps/li[@Class="CompProperties_Power"]/basePowerConsumption/text()</xpath>
+  <value>
+    5
+  </value>
+</Operation>
+<Operation Class="PatchOperationReplace">
+  <xpath>/Defs/ThingDef[defName="SunLamp"]/comps/li[@Class="CompProperties_Power"]/basePowerConsumption/text()</xpath>
+  <value>
+    500
+  </value>
+</Operation>
+</Patch>

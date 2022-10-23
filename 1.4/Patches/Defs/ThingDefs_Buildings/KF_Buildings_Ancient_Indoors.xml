@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+<Operation Class="PatchOperationReplace">
+  <xpath>/Defs/ThingDef[defName="AncientLamp"]/statBases/Flammability/text()</xpath>
+  <value>
+    0.0
+  </value>
+</Operation>
+<Operation Class="PatchOperationFindMod">
+  <mods>
+    <li>Ideology</li>
+  </mods>
+  <match Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[
+    defName="AncientCommsConsole" or
+    defName="AncientSystemRack" or
+    defName="AncientEquipmentBlocks" or
+    defName="AncientMachine" or
+    defName="AncientStorageCylinder" or
+    defName="AncientDisplayBank" or
+    defName="AncientLockerBank" or
+    defName="AncientCrate" or
+    defName="AncientMilitaryCrate" or
+    defName="AncientSpacerCrate" or
+    defName="AncientBarrel" or
+    defName="AncientGenerator" or
+    defName="AncientOperatingTable"
+    ]/statBases/Flammability/text()</xpath>
+  <value>
+    0.0
+  </value>
+  </match>
+</Operation>
+<Operation Class="PatchOperationFindMod">
+  <mods>
+    <li>Ideology</li>
+  </mods>
+  <match Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName="AncientBed"]/statBases/Flammability/text()</xpath>
+  <value>
+    0.1
+  </value>
+  </match>
+</Operation>
+</Patch>

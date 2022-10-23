@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+<Operation Class="PatchOperationReplace">
+  <xpath>/Defs/ThingDef[
+  defName="OrbitalTradeBeacon" or
+  defName="CommsConsole" or 
+  defName="MoisturePump" or
+  defName="GroundPenetratingScanner" or
+  defName="LongRangeMineralScanner" or
+  defName="PodLauncher" or
+  defName="TransportPod" or
+  defName="MultiAnalyzer" or
+  defName="VitalsMonitor" or
+  defName="ToolCabinet" or
+  defName="CryptosleepCasket" or
+  defName="AncientCryptosleepCasket"
+  ]/statBases/Flammability/text()</xpath>
+  <value>
+    0.0
+  </value>
+</Operation>
+<Operation Class="PatchOperationFindMod">
+  <mods>
+    <li>Royalty</li>
+  </mods>
+  <match Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName="ShipLandingBeacon"]/statBases/Flammability/text()</xpath>
+  <value>
+    0.0
+  </value>
+  </match>
+</Operation>
+<Operation Class="PatchOperationFindMod">
+  <mods>
+    <li>Biotech</li>
+  </mods>
+  <match Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[
+    defName="BandNode" or
+    defName="ToxifierGenerator" or
+    defName="GeneAssembler" or
+    defName="GeneBank" or
+    defName="GeneExtractor" or
+    defName="BurnoutMechlinkBooster" or
+    defName="MechbandDish" or
+    defName="PollutionPump" or
+    defName="WastepackAtomizer" or
+    defName="GeneProcessor" or
+    defName="MechBooster"
+    ]/statBases/Flammability/text()</xpath>
+  <value>
+    0.0
+  </value>
+  </match>
+</Operation>
+</Patch>

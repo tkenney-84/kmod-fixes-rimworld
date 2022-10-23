@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+<Operation Class="PatchOperationAdd">
+  <xpath>/Defs/ThingDef[defName="AncientCryptosleepPod"]/statBases</xpath>
+  <order>Append</order>
+  <value>
+    <Flammability>0.0</Flammability>
+  </value>
+</Operation>
+</Patch>

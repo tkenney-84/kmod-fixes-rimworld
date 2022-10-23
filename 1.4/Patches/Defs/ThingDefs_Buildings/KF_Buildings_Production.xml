@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+<Operation Class="PatchOperationReplace">
+  <xpath>/Defs/ThingDef[
+  defName="FueledSmithy" or
+  defName="ElectricSmithy" or
+  defName="TableMachining" or
+  defName="ElectricStove" or
+  defName="FueledStove" or
+  defName="ElectricSmelter" or
+  defName="FabricationBench" or
+  defName="HiTechResearchBench" or
+  defName="HydroponicsBasin" or
+  defName="DeepDrill" or
+  defName="Hopper"
+  ]/statBases/Flammability/text()</xpath>
+  <value>
+    0.0
+  </value>
+</Operation>
+<Operation Class="PatchOperationReplace">
+  <xpath>/Defs/ThingDef[defName="BiofuelRefinery"]/statBases/Flammability/text()</xpath>
+  <value>
+    0.2
+  </value>
+</Operation>
+<Operation Class="PatchOperationReplace">
+  <xpath>/Defs/ThingDef[defName="NutrientPasteDispenser"]/statBases/Flammability/text()</xpath>
+  <value>
+    0.15
+  </value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+  <xpath>/Defs/ThingDef[defName="Brewery"]</xpath>
+  <value>
+    <costStuffCount>120</costStuffCount>
+  </value>
+</Operation>
+<Operation Class="PatchOperationAdd">
+  <xpath>/Defs/ThingDef[defName="FermentingBarrel"]</xpath>
+  <value>
+    <costStuffCount>30</costStuffCount>
+  </value>
+</Operation>
+<Operation Class="PatchOperationAdd">
+  <xpath>/Defs/ThingDef[defName="Brewery" or defName="FermentingBarrel"]</xpath>
+  <value>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+    </stuffCategories>
+  </value>
+</Operation>
+<Operation Class="PatchOperationRemove">
+  <xpath>/Defs/ThingDef[defName="Brewery" or defName="FermentingBarrel"]/costList/WoodLog</xpath>
+</Operation>
+<Operation Class="PatchOperationRemove">
+  <xpath>/Defs/ThingDef[defName="Brewery" or defName="FermentingBarrel"]/constructEffect</xpath>
+</Operation>
+<Operation Class="PatchOperationFindMod">
+  <mods>
+    <li>Biotech</li>
+  </mods>
+  <match Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[
+    defName="MechGestator" or
+    defName="LargeMechGestator" or
+    defName="SubcoreEncoder"
+    ]/statBases/Flammability/text()</xpath>
+  <value>
+    0.0
+  </value>
+  </match>
+</Operation>
+</Patch>

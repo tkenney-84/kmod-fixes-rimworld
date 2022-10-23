@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+<Operation Class="PatchOperationFindMod">
+  <mods>
+    <li>Biotech</li>
+  </mods>
+  <match Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[
+    defName="DeathrestCasket" or
+    defName="Hemopump" or
+    defName="HemogenAmplifier" or
+    defName="GlucosoidPump" or
+    defName="PsychofluidPump" or
+    defName="DeathrestAccelerator"
+    ]/statBases/Flammability/text()</xpath>
+  <value>
+    0.0
+  </value>
+  </match>
+</Operation>
+</Patch>
