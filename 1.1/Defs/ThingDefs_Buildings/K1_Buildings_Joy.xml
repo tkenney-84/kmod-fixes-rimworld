@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>TubeTelevision</defName>
+    <label>tube television</label>
+    <description>A cathode ray tube display for showing moving pictures with sound. Even on the rimworlds, there is often an old transmitter running something at least marginally interesting.</description>
+    <graphicData>
+      <texPath>Things/Building/Joy/TubeTelevision</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shadowData>
+        <volume>(0.5, 0.3, 0.4)</volume>
+      </shadowData>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+    <rotatable>true</rotatable>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <fillPercent>0.40</fillPercent>
+    <thingCategories>
+      <li>BuildingsJoy</li>
+    </thingCategories>
+    <statBases>
+      <WorkToBuild>10000</WorkToBuild>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>14</Mass>
+      <Flammability>0.05</Flammability>
+      <JoyGainFactor>1.2</JoyGainFactor>
+    </statBases>
+    <costList>
+      <Steel>80</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+    <pathCost>70</pathCost>
+    <passability>PassThroughOnly</passability>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <building>
+      <joyKind>Television</joyKind>
+      <spawnedConceptLearnOpportunity>TVForSickPeople</spawnedConceptLearnOpportunity>
+      <boughtConceptLearnOpportunity>TVForSickPeople</boughtConceptLearnOpportunity>
+      <watchBuildingStandDistanceRange>2~4</watchBuildingStandDistanceRange>
+      <watchBuildingStandRectWidth>5</watchBuildingStandRectWidth>
+      <watchBuildingInSameRoom>true</watchBuildingInSameRoom>
+    </building>
+    <placeWorkers>
+      <li>PlaceWorker_WatchArea</li>
+    </placeWorkers>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <shortCircuitInRain>true</shortCircuitInRain>
+        <basePowerConsumption>200</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+    </comps>
+    <tradeTags>
+      <li>Television</li>
+    </tradeTags>
+    <constructEffect>ConstructMetal</constructEffect>
+    <designationCategory>Joy</designationCategory>
+    <designationHotKey>Misc4</designationHotKey>
+    <researchPrerequisites><li>TubeTelevision</li></researchPrerequisites>
+    <constructionSkillPrerequisite>7</constructionSkillPrerequisite>
+    <uiIconScale>0.9</uiIconScale>
+  </ThingDef>
+  
+  <ThingDef ParentName="BuildingBase">
+    <defName>FlatscreenTelevision</defName>
+    <label>flatscreen television</label>
+    <description>A high-tech flat-screen television with crystal-clear image and rich color. Picks up transmissions from ancient satellites and ubiquitous data cards.</description>
+    <graphicData>
+      <texPath>Things/Building/Joy/FlatscreenTelevision</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shadowData>
+        <volume>(1.6, 0.6, 0.1)</volume>
+        <offset>(0, 0, 0.35)</offset>
+      </shadowData>
+      <drawSize>(2,1)</drawSize>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+    <rotatable>true</rotatable>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <fillPercent>0.35</fillPercent>
+    <thingCategories>
+      <li>BuildingsJoy</li>
+    </thingCategories>
+    <costList>
+      <Steel>140</Steel>
+      <ComponentIndustrial>16</ComponentIndustrial>
+    </costList>
+    <statBases>
+      <WorkToBuild>40000</WorkToBuild>
+      <MaxHitPoints>80</MaxHitPoints>
+      <Flammability>0.05</Flammability>
+      <Mass>8</Mass>
+      <JoyGainFactor>1.4</JoyGainFactor>
+    </statBases>
+    <pathCost>70</pathCost>
+    <passability>PassThroughOnly</passability>
+    <size>(2,1)</size>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <researchPrerequisites><li>FlatscreenTelevision</li></researchPrerequisites>
+    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+    <building>
+      <joyKind>Television</joyKind>
+      <spawnedConceptLearnOpportunity>TVForSickPeople</spawnedConceptLearnOpportunity>
+      <boughtConceptLearnOpportunity>TVForSickPeople</boughtConceptLearnOpportunity>
+      <watchBuildingStandDistanceRange>2~6</watchBuildingStandDistanceRange>
+      <watchBuildingStandRectWidth>6</watchBuildingStandRectWidth>
+      <watchBuildingInSameRoom>true</watchBuildingInSameRoom>
+    </building>
+    <designationCategory>Joy</designationCategory>
+    <placeWorkers>
+      <li>PlaceWorker_WatchArea</li>
+    </placeWorkers>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <shortCircuitInRain>true</shortCircuitInRain>
+        <basePowerConsumption>330</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+    </comps>
+    <tradeTags>
+      <li>Television</li>
+    </tradeTags>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>MegascreenTelevision</defName>
+    <label>megascreen television</label>
+    <description>A huge, high-tech television. Gigantic, hyper-vibrant images almost leap out of the screen. Very entertaining. Picks up transmissions from ancient satellites and ubiquitous data cards.</description>
+    <graphicData>
+      <texPath>Things/Building/Joy/MegascreenTelevision</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shadowData>
+        <volume>(2.5, 0.6, 0.1)</volume>
+        <offset>(0, 0, 0.2)</offset>
+      </shadowData>
+      <drawSize>(3,1)</drawSize>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+    <rotatable>true</rotatable>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <fillPercent>0.35</fillPercent>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <thingCategories>
+      <li>BuildingsJoy</li>
+    </thingCategories>
+    <thingSetMakerTags>
+      <li>RewardStandardLowFreq</li>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <costList>
+      <Steel>260</Steel>
+      <ComponentIndustrial>22</ComponentIndustrial>
+    </costList>
+    <statBases>
+      <WorkToBuild>80000</WorkToBuild>
+      <MaxHitPoints>85</MaxHitPoints>
+      <Flammability>0.05</Flammability>
+      <Mass>10</Mass>
+      <JoyGainFactor>1.6</JoyGainFactor>
+    </statBases>
+    <pathCost>70</pathCost>
+    <passability>PassThroughOnly</passability>
+    <size>(3,1)</size>
+    <building>
+      <joyKind>Television</joyKind>
+      <spawnedConceptLearnOpportunity>TVForSickPeople</spawnedConceptLearnOpportunity>
+      <boughtConceptLearnOpportunity>TVForSickPeople</boughtConceptLearnOpportunity>
+      <watchBuildingStandDistanceRange>2~7</watchBuildingStandDistanceRange>
+      <watchBuildingStandRectWidth>7</watchBuildingStandRectWidth>
+      <watchBuildingInSameRoom>true</watchBuildingInSameRoom>
+    </building>
+    <placeWorkers>
+      <li>PlaceWorker_WatchArea</li>
+    </placeWorkers>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <shortCircuitInRain>true</shortCircuitInRain>
+        <basePowerConsumption>450</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+    </comps>
+    <tradeTags>
+      <li>Television</li>
+    </tradeTags>
+  </ThingDef>
+  
+  <ThingDef ParentName="BuildingBase">
+    <defName>Telescope</defName>
+    <label>telescope</label>
+    <description>A telescope for doing amateur astronomy. It's a relaxing hobby for a certain kind of person. Can only be used outdoors.</description>
+    <graphicData>
+      <texPath>Things/Building/Joy/Telescope</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawRotated>false</drawRotated>
+      <shadowData>
+        <volume>(0.3, 0.7, 0.3)</volume>
+    <offset>(-0.03,0,-0.35)</offset>
+      </shadowData>
+    </graphicData>
+    <canBeUsedUnderRoof>false</canBeUsedUnderRoof>
+    <fillPercent>0.15</fillPercent>
+    <altitudeLayer>Building</altitudeLayer>
+    <hasInteractionCell>true</hasInteractionCell>
+    <interactionCellOffset>(0,0,1)</interactionCellOffset>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <thingCategories>
+      <li>BuildingsJoy</li>
+    </thingCategories>
+    <building>
+      <joyKind>Telescope</joyKind>
+    </building>
+    <costList>
+      <Steel>50</Steel>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </costList>
+    <statBases>
+      <MaxHitPoints>75</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <MarketValue>350</MarketValue>
+      <Mass>7.5</Mass>
+      <JoyGainFactor>1.2</JoyGainFactor>
+    </statBases>
+    <placeWorkers>
+      <li>PlaceWorker_NotUnderRoof</li>
+      <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+    </placeWorkers>
+  </ThingDef>
+  
+</Defs>
