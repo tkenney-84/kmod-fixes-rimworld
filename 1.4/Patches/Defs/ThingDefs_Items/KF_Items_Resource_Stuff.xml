@@ -1,19 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 <Operation Class="PatchOperationReplace">
-  <xpath>/Defs/ThingDef[defName="Silver"]/stuffProps/statFactors/Flammability/text()</xpath>
-  <value>
-    0.0
-  </value>
-</Operation>
-<Operation Class="PatchOperationReplace">
-  <xpath>/Defs/ThingDef[defName="Gold"]/stuffProps/statFactors/Flammability/text()</xpath>
-  <value>
-    0.0
-  </value>
-</Operation>
-<Operation Class="PatchOperationReplace">
-  <xpath>/Defs/ThingDef[defName="Steel"]/stuffProps/statFactors/Flammability/text()</xpath>
+  <xpath>/Defs/ThingDef[defName="Silver" or defName="Gold" or defName="Steel"]/stuffProps/statFactors/Flammability/text()</xpath>
   <value>
     0.0
   </value>
